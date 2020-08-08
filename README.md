@@ -1,3 +1,5 @@
+On this project I did display knowlage of making app with react-redux and connect it with api calls.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
