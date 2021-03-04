@@ -7,8 +7,9 @@ import { connect } from 'react-redux';
 import { fetchCovidData } from './actions/covidDataAction';
 import CovidContent from './components/CovidContent';
 import { countries } from './utils';
+import Footer from './components/Footer'
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
 
 
 
@@ -37,9 +38,7 @@ class App extends React.Component {
 
             </div>
           </Content>
-          <Footer style={{ textAlign: "center" }}>
-            Data has been taken from covid19api.com
-          </Footer>
+          <Footer />
         </Layout>
       </Layout>
     );
