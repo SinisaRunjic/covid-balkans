@@ -1,1 +1,1 @@
-// TO DO finish component
+export {default} from './Header'

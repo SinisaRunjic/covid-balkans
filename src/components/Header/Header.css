@@ -1,0 +1,9 @@
+.custom-header {
+  background: #ffffff;
+  text-align: center;
+  color: #aab1a3;
+}
+.custom-header > h1 {
+  color: #aab1a3;
+  padding: 0;
+}

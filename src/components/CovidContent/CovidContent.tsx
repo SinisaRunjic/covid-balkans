@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Row, Col, Divider } from 'antd';
-import DataComponent from './DataComponent'
-import '../style/style.css';
+import DataComponent from '../DataComponent'
+import {ICovidContent} from './interface'
 
-class CovidContent extends Component {
-	render() {
-		return (
+const CovidContent = (props: ICovidContent) => {
+    return (
 			<div>
-				{this.props.covidData && (
-					this.props.covidData.map(item =>
+				{props.covidData && (
+					props.covidData.map((item:any) =>
 					(
 						<div key={item.Country}>
 							<Divider orientation="left" style={{ color: '#333', fontWeight: 'normal' }}>
@@ -31,7 +30,6 @@ class CovidContent extends Component {
 				)}
 			</div>
 		)
-	}
 }
 
-export default CovidContent;
+export default CovidContent

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import {IDateComponent} from './interface';
+import {IDateComponent} from './interface'
 import './DateComponent.css';
+
 
 const DateComponent:React.FC<IDateComponent> = (props) => {
   const [date] = useState(new Date(props.date))
