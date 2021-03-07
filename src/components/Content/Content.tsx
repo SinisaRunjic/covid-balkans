@@ -3,7 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import CovidContent from "../CovidContent";
 import ButtonsForUpload from "../ButtonsForUpload";
-import { fetchCovidData } from "../../actions/covidDataAction";
+import { fetchCovidData } from "./reduxContent/action";
 import { countries } from "../../utils";
 import { IContent } from "./interface";
 
@@ -11,7 +11,6 @@ const { Content } = Layout;
 
 const ContentWrapper: React.FC<IContent> = ({ covidData, fetchCovidData }) => {
   const addData = (country: string) => {
-    console.log(country);
     fetchCovidData(country);
   };
 
@@ -22,7 +21,7 @@ const ContentWrapper: React.FC<IContent> = ({ covidData, fetchCovidData }) => {
         style={{ padding: 24, minHeight: 360 }}
       >
         <ButtonsForUpload countries={countries} addData={addData} />
-        <CovidContent covidData={covidData.data} />
+        <CovidContent covidData={covidData.covidData} />
       </div>
     </Content>
   );

@@ -1,13 +1,12 @@
 import { Reducer } from "redux";
 import { ICovidState, CovidDataAction, ContentActionTypes } from "./types";
 
-export const initialCovidState: ICovidState = { covidData: [] };
+export const initialCovidState: ICovidState = { data: [] };
 
 export const covidReducer: Reducer<ICovidState, CovidDataAction> = (
   state = initialCovidState,
   action
 ) => {
-  console.log(action.payload);
   switch (action.type) {
     case ContentActionTypes.GETONE: {
       return {

@@ -17,5 +17,5 @@ export type CovidDataAction = ICovidData;
 
 /* covid state */
 export interface ICovidState {
-  readonly covidData: any;
+  readonly data: any;
 }

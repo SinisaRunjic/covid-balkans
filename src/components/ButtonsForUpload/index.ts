@@ -1,1 +1,1 @@
-export {default} from './ButtonsForUpload'
+export { default } from "./ButtonsForUpload";

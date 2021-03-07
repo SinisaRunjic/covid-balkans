@@ -17,7 +17,9 @@ import { ICovidState } from "./components/Content/reduxContent/types";
 
 /* interface for entire application */
 
-export interface IApplicationState extends ICovidState {}
+export interface IApplicationState {
+  covidData: ICovidState;
+}
 
 const initialState: IApplicationState = {
   covidData: initialCovidState,
