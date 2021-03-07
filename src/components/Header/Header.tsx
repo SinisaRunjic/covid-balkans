@@ -18,7 +18,7 @@ const HeaderWrapper = () => {
             target="_blank"
           >
             <Button type="link" block>
-              Githup Repo
+              Github Repo
             </Button>
           </a>
         </Col>
