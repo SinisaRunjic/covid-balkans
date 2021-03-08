@@ -11,10 +11,9 @@ export const fetchCovidData: ActionCreator<
     .then((res) => res.json())
     .then((data) => {
       const lastEntryData = data[data.length - 1];
-      console.log(getState());
       const covidData = getState()
         .covidData.data.filter(
-          (data: any) => data.Country.toLowerCase() !== country
+          (data: any) => data.Country.toLowerCase() !== country.toLowerCase()
         )
         .concat(lastEntryData);
       return dispatch({
